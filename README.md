@@ -1,0 +1,165 @@
+# MavunoGuard
+
+MavunoGuard is a farm intelligence web application designed to help farmers make better field decisions by bringing climate information, crop health monitoring, farm activities, and AI-assisted recommendations into one interface.
+
+## Live Demo
+
+**Demo:** [MavunoGuard Live Demo](https://mavunoguard.vercel.app/)
+
+> The demo showcases the current frontend prototype, including authentication, climate intelligence, crop health analysis, AI advisor, and smart calendar interfaces.
+
+## Features
+
+### Authentication
+
+* Sign in and account creation
+* Email and password forms
+* Password visibility toggle
+* Remember-me option
+* Google and Apple sign-in interface
+
+### Climate Intelligence
+
+* Current weather overview
+* Rain probability
+* Wind information
+* Growing degree days
+* Seven-day outlook
+* Weather refresh interface
+
+The current implementation uses demonstration climate data.
+
+### Crop Health
+
+* Crop image upload
+* Image preview
+* Crop health assessment interface
+* Confidence score
+* Field scouting recommendations
+
+### AI Advisor
+
+* Natural-language agricultural questions
+* Crop and weather-related guidance
+* Farm decision-support interface
+* Practical next-step recommendations
+
+### Smart Calendar
+
+* Farm task planning
+* Upcoming activities
+* Task completion tracking
+* Crop and climate-related recommendations
+
+## Tech Stack
+
+| Technology     | Purpose                              |
+| -------------- | ------------------------------------ |
+| HTML5          | Page structure                       |
+| CSS3           | Styling and responsive layouts       |
+| JavaScript     | Client-side functionality            |
+| Google Fonts   | DM Sans and Space Grotesk typography |
+| Responsive CSS | Mobile and adaptive layouts          |
+
+## Project Structure
+
+```text
+MavunoGuard/
+├── index.html
+├── auth.html
+├── dashboard.html
+├── farm.html
+├── climate.html
+├── crop-health.html
+├── advisor.html
+├── calendar.html
+│
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   ├── auth.css
+│   └── ...
+│
+├── assets/
+│   └── dashboard.css
+│
+└── js/
+    ├── app.js
+    ├── auth.js
+    ├── climate.js
+    ├── crop-health.js
+    ├── advisor.js
+    └── calendar.js
+```
+
+## Application Flow
+
+```text
+Authentication
+      ↓
+Farm Dashboard
+      ↓
+ ┌────┼─────────────┐
+ ↓    ↓             ↓
+Climate  Crop Health  AI Advisor
+      ↓
+Smart Calendar
+      ↓
+Farm Decision Support
+```
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone <repository-url>
+cd MavunoGuard
+```
+
+### Run locally
+
+Open the project with a local development server, such as VS Code Live Server, and launch:
+
+```text
+index.html
+```
+
+## Current Status
+
+**Status: Frontend Prototype**
+
+Implemented:
+
+* Authentication interface
+* Dashboard navigation
+* Climate intelligence interface
+* Crop health interface
+* AI Advisor interface
+* Smart Calendar
+* Responsive UI
+* Client-side interactions
+
+The current version uses demonstration data and does not yet establish production backend services, database integration, live weather APIs, or a production AI model.
+
+## Future Development
+
+* Real-time weather API integration
+* Secure authentication
+* Farm and crop database
+* AI-powered agricultural recommendations
+* Computer-vision crop disease detection
+* Soil and sensor integration
+* Automated weather alerts
+* Farm-specific recommendation models
+* Cloud image storage
+* Notifications and reminders
+
+## License
+
+This project is currently intended for development and demonstration purposes.
+
+---
+
+**MavunoGuard**
+Farm intelligence for a changing climate.
