@@ -1,0 +1,2 @@
+document.querySelector('#refresh-weather')?.addEventListener('click', (event) => { event.currentTarget.textContent = 'Updated just now ✓'; });
+document.querySelector('.mobile-menu')?.addEventListener('click', () => document.querySelector('.sidebar').classList.toggle('is-open'));

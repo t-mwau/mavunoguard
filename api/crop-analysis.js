@@ -1,0 +1,1 @@
+module.exports = async function handler(request, response) { if (request.method !== 'POST') return response.status(405).json({ error: 'Method not allowed' }); response.status(200).json({ source: 'demo', label: 'Healthy with one watch-out', confidence: 0.82, recommendation: 'Scout the north field and compare pale leaves against soil notes.' }); };

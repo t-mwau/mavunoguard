@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in or create your MavunoGuard farm intelligence account.">
+  <title>Sign in | MavunoGuard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-body">
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <a class="brand" href="auth.html"><span class="brand-mark">M</span><span>MavunoGuard</span></a>
+      <div class="auth-message"><p class="eyebrow"><span class="status-dot"></span> Your farm, in focus</p><h1>Decisions that<br><em>move you forward.</em></h1><p>One calm place for your weather, fields, and next best action.</p></div>
+      <div class="auth-footer">Farm intelligence for a changing climate.</div>
+    </section>
+    <section class="auth-panel" aria-labelledby="auth-title">
+      <div class="auth-panel-header"><p class="eyebrow" id="auth-mode-label">Welcome back</p><h2 id="auth-title">Sign in</h2><p id="auth-subtitle">Continue to your farm dashboard.</p></div>
+      <div class="auth-tabs" role="tablist"><button class="auth-tab is-active" type="button" data-mode="login" role="tab" aria-selected="true">Sign in</button><button class="auth-tab" type="button" data-mode="signup" role="tab" aria-selected="false">Create account</button></div>
+      <form class="auth-form" id="login-form" novalidate>
+        <label class="field auth-name-field is-hidden">Full name<input name="fullName" type="text" autocomplete="name" minlength="2"></label>
+        <label class="field">Email address<input name="email" type="email" autocomplete="email" required></label>
+        <label class="field">Password<span class="password-field"><input name="password" type="password" autocomplete="current-password" minlength="8" required><button class="password-toggle" type="button" aria-label="Show password">Show</button></span></label>
+        <label class="field auth-confirm-field is-hidden">Confirm password<span class="password-field"><input name="confirmPassword" type="password" autocomplete="new-password" minlength="8"></span></label>
+        <div class="auth-options"><label class="remember-option"><input type="checkbox" name="remember"> Remember me</label><button type="button" class="link-button">Forgot password?</button></div>
+        <p class="form-message" id="form-message" role="alert" aria-live="polite"></p>
+        <button class="button button-dark auth-submit" type="submit"><span id="submit-label">Sign in</span><span>↗</span></button>
+      </form>
+      <div class="auth-divider"><span>or continue with</span></div>
+      <div class="provider-buttons"><button class="provider-button" type="button" data-provider="Google"><b>G</b> Google</button><button class="provider-button" type="button" data-provider="Apple"><b>●</b> Apple</button></div>
+      <p class="auth-legal">By continuing, you agree to MavunoGuard's terms and privacy policy.</p>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
+

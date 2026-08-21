@@ -1,0 +1,2 @@
+document.querySelectorAll('.task-check').forEach((check) => check.addEventListener('change', () => check.parentElement.style.opacity = check.checked ? '.45' : '1'));
+document.querySelector('.mobile-menu')?.addEventListener('click', () => document.querySelector('.sidebar').classList.toggle('is-open'));

@@ -1,0 +1,1 @@
+module.exports = async function handler(request, response) { response.setHeader('Cache-Control', 's-maxage=900, stale-while-revalidate=3600'); response.status(200).json({ source: 'demo', location: request.query?.location || 'Nakuru County, Kenya', current: { temperature: 24, condition: 'Partly cloudy', rainChance: 32, windKph: 14 }, forecast: [24, 25, 23, 26, 24, 27, 25] }); };

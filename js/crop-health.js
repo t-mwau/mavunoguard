@@ -1,0 +1,4 @@
+const imageInput = document.querySelector('#crop-image'); const preview = document.querySelector('#image-preview'); const cropForm = document.querySelector('#crop-form');
+imageInput?.addEventListener('change', () => { const file = imageInput.files[0]; if (!file || !file.type.startsWith('image/')) return; const image = document.createElement('img'); image.className = 'crop-preview-image'; image.src = URL.createObjectURL(file); preview.replaceChildren(image); });
+cropForm?.addEventListener('submit', (event) => { event.preventDefault(); document.querySelector('#crop-result').style.display = 'block'; });
+document.querySelector('.mobile-menu')?.addEventListener('click', () => document.querySelector('.sidebar').classList.toggle('is-open'));
